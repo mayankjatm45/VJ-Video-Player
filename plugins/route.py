@@ -25,7 +25,7 @@ html_content = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team SPY - Bot is Live</title>
+    <title>Warrior Units - Site is Live</title>
     <style>
         /* Basic reset */
         * {
@@ -334,4 +334,5 @@ async def media_streamer(request: web.Request, id: int, secure_hash: str):
             "Accept-Ranges": "bytes",
         },
     )
+
 
