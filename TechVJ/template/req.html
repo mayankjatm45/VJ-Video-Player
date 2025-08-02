@@ -91,9 +91,30 @@
             </div>
 		<a href="{{link}}" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded mt-4">
                     Join Telegram Channel
-                </a>
+                </a> </div>
+      
+      
+      <a id="demo4" onclick="showLinkModal('{{tg_button}}')" class="btn btn-warning w-100 mb-2" style="border: none; background-color: {{ colours.create_link.background }}; color: {{ colours.create_link.color }};">
+        <i class="fa-brands fa-telegram"></i> Create Like This Link
+      </a>
+      
+      <a onclick="shareButton()" class="btn btn-danger w-100 mb-3" style="border: none; background-color: {{ colours.share.background }}; color: {{ colours.share.color }};">
+        <i class="fa fa-share-alt"></i> Share Now
+      </a>
+      
+      <div class="card bg-dark text-light border-secondary mb-4" style="background-color: {{ colours.file_information.background }}  !important; color: {{ colours.file_information.color }}  !important;">
+        <div class="card-header border-secondary">
+          <h5 class="mb-0"><i class="fa-solid fa-circle-info me-2"></i> File Information</h5>
         </div>
-
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <p><strong>Name: </strong>{{file_name}}</p>
+              <p><strong>Size: </strong>{{file_size}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
             <div class="justify-content-center align-items-center w-100 d-flex mb-3 mt-4">
                 <div class="row d-flex w-100 justify-content-center align-items-center">
                     <div class="col-lg-8 col-10  py-2 text-center bg-danger rounded-4 text-sm font-bold wow animate__animated animate__FadeIn">
